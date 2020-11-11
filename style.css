@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  background-image: url(./assets/city_bg_night.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.building {
+  width: 23%;
+  height: 90vh;
+  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 2%;
+  background: linear-gradient(
+      135deg,
+      #708090 21px,
+      #d9ecff 22px,
+      #d9ecff 24px,
+      transparent 24px,
+      transparent 67px,
+      #d9ecff 67px,
+      #d9ecff 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        225deg,
+        #708090 21px,
+        #d9ecff 22px,
+        #d9ecff 24px,
+        transparent 24px,
+        transparent 67px,
+        #d9ecff 67px,
+        #d9ecff 69px,
+        transparent 69px
+      )
+      0 64px;
+  background-color: #708090;
+  background-size: 64px 128px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.windows-group {
+  height: 70%;
+  width: 100%;
+  background: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.window {
+  width: 42%;
+  height: 100px;
+  background: #40cae0e3;
+  border: 10px solid red;
+}
+
+.window:nth-child(odd) {
+  margin-right: 13px;
+}
+
+.door {
+  height: 30%;
+  width: 100%;
+  background: cornflowerblue;
+  display: flex;
+}
+
+.left-door {
+  width: 50%;
+  height: 100%;
+  background: greenyellow;
+}
+
+.rigth-door {
+  width: 50%;
+  height: 100%;
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.camera {
+  position: relative;
+  position: fixed;
+  top: 9%;
+  left: 28%;
+}
+
+#container {
+  margin: 0px auto;
+  width: 500px;
+  height: 475px;
+  border: 10px solid red;
+}
+
+#videoElement {
+  width: 500px;
+  height: 375px;
+  background-color: #666;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+  color: blue;
+}
+
+::marker {
+  display: none;
+  color: chartreuse;
+}
+
+summary::after {
+  background: url(./assets/iconfinder_Camera_.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left; 
+  height: 64px;
+  width: 64px;
+  content: " ";
+}
